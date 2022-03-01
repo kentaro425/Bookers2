@@ -6,11 +6,11 @@ class User < ApplicationRecord
 
   has_many :books, dependent: :destroy
   has_one_attached :profile_image
-  validates :name, presence: true, length: {minimum:2, maximum:20},uniqueness: true
-  validates :introduction, length: {maximum:50}
+  validates :name, presence: true, length: { minimum: 2, maximum: 20 }, uniqueness: true
+  validates :introduction, length: { maximum: 50 }
 
   def self.guest
-    find_or_create_by!(name: 'guestuser' ,email: 'guest@example.com') do |user|
+    find_or_create_by!(name: 'guestuser', email: 'guest@example.com') do |user|
       user.password = SecureRandom.urlsafe_base64
       user.name = "guestuser"
     end
@@ -23,5 +23,4 @@ class User < ApplicationRecord
     end
     profile_image.variant(resize: size).processed
   end
-
 end
