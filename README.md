@@ -1,24 +1,6 @@
-# README
+# Bookers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+DMMWEBCAMP1ヶ月目の課題3です。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ユーザー認証機能のついた、本のタイトルと感想を投稿する基本的なCRUDアプリです。
